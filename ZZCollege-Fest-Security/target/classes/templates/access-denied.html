@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="ISO-8859-1">
+<title>Custom Denied Page</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5 pt-2 border">
+		<h1 style="text-align: center;">Welcome to Great Learning</h1>
+		<hr>
+		<div class="alert alert-info">
+			<strong><i>Access Denied! You are not authorized to
+					Perform This Operation</i></strong>
+		</div>
+		<div class="alert alert-primary">
+			<h5>
+				<a th:href="@{/students/list}">Go to the Home Page</a>
+			</h5>
+		</div>
+	</div>
+
+
+</body>
+</html>
